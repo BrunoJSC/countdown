@@ -1,16 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./*.html",
-  ],
+  // enabled: process.env.NODE_ENV === 'production',
+  content: ["./*.{html,js}"],
 
   theme: {
     extend: {},
   },
   plugins: [],
-  purge: [
-    './index.html',
-    './main.js',
-    './*.{html,js}'
-  ]
 }
